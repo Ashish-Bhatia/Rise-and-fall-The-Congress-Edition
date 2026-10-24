@@ -14,7 +14,7 @@ const make = (tag, className, text) => {
 };
 
 let data;
-let selected = 2024;
+let selected = Number(new URLSearchParams(location.search).get('election')) || 2024;
 let metric = 'seats';
 let barButtons = [];
 
@@ -105,6 +105,11 @@ function selectElection(year, announce = true) {
   if (index < 0) return;
   const e = data.elections[index];
   selected = year;
+  if (announce) {
+    const url = new URL(location.href);
+    url.searchParams.set('election', String(year));
+    history.replaceState(null, '', url);
+  }
   const previous = data.elections[index - 1];
   $('election-select').value = String(year);
   $('election-title').textContent = e.label;
@@ -161,7 +166,10 @@ function renderTable() {
     sourceLine.append(source);
     result.append(sourceLine);
     if (e.initialSeats) result.append(make('small', '', e.note));
-    tr.append(year, party, seats, voteShare, seatShare, result);
+    const cells = [year, party, seats, voteShare, seatShare, result];
+    const labels = ['Election', 'Party', 'Seats won', 'Valid vote share', 'Seat share', 'Result & source'];
+    cells.forEach((cell, index) => cell.dataset.label = labels[index]);
+    tr.append(...cells);
     fragment.append(tr);
   });
   $('results-body').replaceChildren(fragment);
@@ -173,6 +181,7 @@ async function init() {
     const response = await fetch(new URL('../data/elections.json', import.meta.url), { cache: 'no-cache' });
     if (!response.ok) throw new Error('Election data is unavailable.');
     data = validate(await response.json());
+    if (!data.elections.some(e => e.year === selected)) selected = 2024;
     populateSelectors();
     buildBars();
     renderChart();
@@ -187,7 +196,9 @@ async function init() {
     }));
     $('election-select').addEventListener('change', event => {
       selectElection(Number(event.target.value));
-      barButtons.find(button => Number(button.dataset.year) === selected).scrollIntoView({ block: 'nearest', inline: 'nearest' });
+      const button = barButtons.find(button => Number(button.dataset.year) === selected);
+      const scroll = document.querySelector('.chart-scroll');
+      scroll.scrollLeft += button.getBoundingClientRect().left - scroll.getBoundingClientRect().left - scroll.clientWidth / 2 + button.clientWidth / 2;
     });
     for (const id of ['compare-from', 'compare-to']) $(id).addEventListener('change', renderComparison);
     for (const id of ['era-filter', 'data-sort']) $(id).addEventListener('change', renderTable);

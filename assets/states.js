@@ -77,7 +77,7 @@ export function buildComparisons(input) {
 }
 
 let areas = [];
-let selectedArea = 'maharashtra';
+let selectedArea = typeof location !== 'undefined' ? new URLSearchParams(location.search).get('area') || 'maharashtra' : 'maharashtra';
 let selectedMeasure = 'seatsWon';
 const measures = {
   seatsWon: { label: 'Seats won', value: row => row.seatsWon, format: n => String(n), max: row => row.totalSeats },
@@ -90,6 +90,11 @@ function renderArea(announce = true) {
   const area = areas.find(row => row.id === selectedArea);
   const from = area.years[2019];
   const to = area.years[2024];
+  if (announce) {
+    const url = new URL(location.href);
+    url.searchParams.set('area', area.id);
+    history.replaceState(null, '', url);
+  }
   $('state-select').value = area.id;
   $('state-title').textContent = area.name;
   $('state-category').textContent = area.kind === 'state' ? 'STATE TOTAL' : area.kind === 'combined-area' ? 'EXPLICITLY COMBINED AREA' : 'UNION TERRITORY';
@@ -146,6 +151,36 @@ function pairCell(area, key, format) {
   return cell;
 }
 
+function openArea(area) {
+  selectedArea = area.id;
+  renderArea();
+  if (location.hash !== '#state-profile') location.hash = 'state-profile';
+  $('state-title').focus({ preventScroll: true });
+  $('state-profile').scrollIntoView({ behavior: 'auto', block: 'start' });
+}
+
+function areaCard(area) {
+  const card = node('details', 'area-card');
+  const summary = node('summary');
+  const title = node('span');
+  title.append(node('span', '', area.name), node('small', '', `${area.years[2019].seatsWon} → ${area.years[2024].seatsWon} seats (${signed(area.seatChange)})`));
+  summary.append(title);
+  const list = node('dl');
+  for (const [label, key, format] of [['Seats won', 'seatsWon', String], ['Contested', 'seatsContested', String], ['Valid vote share', 'validVoteShare', percentage], ['Strike rate', 'strikeRate', percentage]]) {
+    const item = node('div');
+    item.append(node('dt', '', label), node('dd', '', `${format(area.years[2019][key])} → ${format(area.years[2024][key])}`));
+    list.append(item);
+  }
+  const button = node('button', '', 'Open full area profile ↗');
+  button.type = 'button';
+  button.setAttribute('aria-label', `View ${area.name} comparison`);
+  button.addEventListener('click', () => openArea(area));
+  card.append(summary, list);
+  if (area.kind === 'combined-area') card.append(node('p', 'area-card-note', 'Combined geography. The profile shows the original areas and totals.'));
+  card.append(button);
+  return card;
+}
+
 function renderStateTable() {
   const query = $('state-search').value.trim().toLocaleLowerCase('en');
   const kind = $('state-kind').value;
@@ -163,12 +198,7 @@ function renderStateTable() {
     const button = node('button', 'state-row-button', area.name);
     button.type = 'button';
     button.setAttribute('aria-label', `View ${area.name} comparison`);
-    button.addEventListener('click', () => {
-      selectedArea = area.id;
-      renderArea();
-      $('state-title').focus({ preventScroll: true });
-      $('state-profile').scrollIntoView({ behavior: 'auto', block: 'start' });
-    });
+    button.addEventListener('click', () => openArea(area));
     th.append(button);
     if (area.units[2019].length > 1 || area.units[2024].length > 1) th.append(node('small', '', 'Combined geography, see profile'));
     const change = node('td', `numeric state-delta ${area.seatChange < 0 ? 'negative' : area.seatChange > 0 ? 'positive' : ''}`, signed(area.seatChange));
@@ -192,6 +222,8 @@ function renderStateTable() {
     fragment.append(tr);
   }
   $('state-results-body').replaceChildren(fragment);
+  $('state-cards').replaceChildren(...rows.map(areaCard));
+  if (!rows.length) $('state-cards').append(node('p', 'load-status', 'No area matches your search. Clear the search or choose another area type.'));
   $('state-table-count').textContent = `${rows.length} of 35 comparable areas`;
 }
 
@@ -200,6 +232,7 @@ async function initStates() {
     const response = await fetch(new URL('../data/states-2019-2024.json', import.meta.url), { cache: 'no-cache' });
     if (!response.ok) throw new Error('State data unavailable.');
     areas = buildComparisons(validateStates(await response.json()));
+    if (!areas.some(area => area.id === selectedArea)) selectedArea = 'maharashtra';
     for (const area of areas) {
       const option = node('option', '', area.name);
       option.value = area.id;
@@ -227,7 +260,7 @@ async function initStates() {
     });
     renderArea(false);
     renderStateTable();
-    for (const id of ['state-profile', 'state-controls', 'state-table-wrap']) $(id).hidden = false;
+    for (const id of ['state-profile', 'state-controls', 'state-table-wrap', 'state-cards']) $(id).hidden = false;
     $('state-load-status').hidden = true;
   } catch (error) {
     const status = $('state-load-status');
@@ -236,7 +269,7 @@ async function initStates() {
     const download = node('a', '', 'Download the state comparison CSV');
     download.href = 'data/state-comparisons.csv';
     download.download = '';
-    status.append(download, document.createTextNode(', or reload to try again. The national explorer remains separate.'));
+    status.append(download, document.createTextNode(', or reload to try again.'));
     console.error('State comparison could not load:', error);
   }
 }
