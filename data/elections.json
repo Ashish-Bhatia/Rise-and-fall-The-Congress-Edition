@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "title": "Congress: An Electoral Story",
+  "reviewedAt": "2026-10-24",
+  "latestIncludedResult": "2026-10-09",
+  "series": "Lok Sabha general-election cycles, including deferred 1985 and 1992 polls",
+  "voteShareBasis": "ECI percentage of valid votes; recent reports exclude NOTA and invalid votes",
+  "seatBasis": "Elected seats in the reported election cycle; nominated members excluded",
+  "sources": {
+    "historical": {
+      "title": "ECI Electoral Statistics, Tables 6.4.3–6.4.5, printed pages 29–31",
+      "publisher": "Election Commission of India",
+      "url": "https://www.eci.gov.in/eci-backend/public/api/download?url=LMAhAK6sOPBp%2FNFF0iRfXbEB1EVSLT41NNLRjYNJJP1KivrUxbfqkDatmHy12e%2FzVx8fLfn2ReU7TfrqYobgIp3FkHJEH03HdUqVNGXd%2BrAoFcaULKPkZEzGFJFSyEuIfH2yBBtIlt8LEiiH3eBODI3oWxlqGvTyGsxE%2Bvy01mIWg%2FDAyOIXSdAs9qnmsPCahtDHL6KmVVf5hrvMeLSKAg%3D%3D",
+      "access": "PDF text retrieved on 24 October 2026"
+    },
+    "combined": {
+      "title": "ECI Electoral Statistics 2023, Tables 6.9–6.11, printed pages 45–49",
+      "publisher": "Election Commission of India",
+      "url": "https://www.eci.gov.in/eci-backend/public/api/download?url=LMAhAK6sOPBp%2FNFF0iRfXbEB1EVSLT41NNLRjYNJJP1KivrUxbfqkDatmHy12e%2FzVx8fLfn2ReU7TfrqYobgItVaDT1%2FN9NoActktqO4y0Ti6YTNhJb3duBnsypGrGbsFOwC3iVoQ82MxhlUAMbtgRkU2VvXw6n8RkOkaSlgUgdOo00ndBxGzBsC%2B0pwZ4d5",
+      "access": "PDF text retrieved on 24 October 2026"
+    },
+    "2014": {
+      "title": "ECI, Performance of National Parties, 2014",
+      "publisher": "Election Commission of India",
+      "url": "https://hindi.eci.gov.in/files/file/2820-performance-of-national-parties/",
+      "access": "Indexed ECI table checked on 24 October 2026; legacy download returned an access error"
+    },
+    "2019": {
+      "title": "PIB, General Elections 2024 flipbook, printed page 65: ECI 2019 national-party table",
+      "publisher": "Press Information Bureau; table from Election Commission of India",
+      "url": "https://static.pib.gov.in/WriteReadData/userfiles/GE2024/files/basic-html/page67.html",
+      "access": "Table retrieved on 24 October 2026"
+    },
+    "2024": {
+      "title": "ECI, Performance of National Parties, 2024, report 20",
+      "publisher": "Election Commission of India",
+      "url": "https://www.eci.gov.in/eci-backend/public/all_files/GE-2024-statistical-report/20-Performance-of-National-Parties.pdf",
+      "access": "Complete one-page report retrieved on 24 October 2026"
+    }
+  },
+  "elections": [
+    {
+      "year": 1951, "label": "1951–52", "ordinal": 1, "party": "INC", "seats": 364, "totalSeats": 489, "voteShare": 44.99, "era": "early", "outcome": "Congress majority", "source": "historical",
+      "description": "Congress won almost three-quarters of the elected seats in the first Lok Sabha general election, with less than half of valid votes nationally.",
+      "note": "Early elections included multi-member constituencies. The denominator is elected seats, rather than the number of constituencies."
+    },
+    {
+      "year": 1957, "label": "1957", "ordinal": 2, "party": "INC", "seats": 371, "totalSeats": 494, "voteShare": 47.78, "era": "early", "outcome": "Congress majority", "source": "historical",
+      "description": "Congress increased both its seats and its valid vote share, retaining a large parliamentary majority.",
+      "note": "The elected-seat total rose from 489 to 494. Seat share accounts for this change."
+    },
+    {
+      "year": 1962, "label": "1962", "ordinal": 3, "party": "INC", "seats": 361, "totalSeats": 494, "voteShare": 44.72, "era": "early", "outcome": "Congress majority", "source": "historical",
+      "description": "Congress retained its third consecutive Lok Sabha majority, despite a lower seat total and vote share than in 1957.",
+      "note": "National vote share and the share of constituencies won answer different questions."
+    },
+    {
+      "year": 1967, "label": "1967", "ordinal": 4, "party": "INC", "seats": 283, "totalSeats": 520, "voteShare": 40.78, "era": "early", "outcome": "Congress majority at election", "source": "historical",
+      "description": "Congress lost 78 seats compared with 1962. It retained a Lok Sabha majority with a much smaller share of the elected seats.",
+      "note": "Outcome labels describe the election result, rather than every subsequent change during the parliamentary term."
+    },
+    {
+      "year": 1971, "label": "1971", "ordinal": 5, "party": "INC", "seats": 352, "totalSeats": 518, "voteShare": 43.68, "era": "reversals", "outcome": "Congress majority", "source": "historical",
+      "description": "Congress regained seats and vote share, expanding its parliamentary majority after the reduced 1967 result.",
+      "note": "ECI lists Indira Gandhi’s Congress as INC and Congress (Organisation) separately as NCO. NCO is excluded from this series."
+    },
+    {
+      "year": 1977, "label": "1977", "ordinal": 6, "party": "INC", "seats": 154, "totalSeats": 542, "voteShare": 34.52, "era": "reversals", "outcome": "Opposition", "source": "historical",
+      "description": "Congress lost 198 seats compared with 1971 and moved out of Union government. Its share of elected seats fell below its national valid vote share.",
+      "note": "ECI records the leading Janata formation under BLD. Its result is separate from the Congress series."
+    },
+    {
+      "year": 1980, "label": "1980", "ordinal": 7, "party": "INC(I)", "seats": 353, "totalSeats": 529, "voteShare": 42.69, "era": "reversals", "outcome": "Congress majority", "source": "historical",
+      "description": "Indira Gandhi’s Congress returned with a majority, gaining 199 seats over the 1977 Congress result.",
+      "note": "This row follows ECI’s INC(I) label. INC(U) is a separate party and is excluded. The reported election covered 529 elected seats."
+    },
+    {
+      "year": 1984, "label": "1984–85", "ordinal": 8, "party": "INC", "seats": 414, "totalSeats": 541, "voteShare": 48.12, "era": "reversals", "outcome": "Congress majority", "source": "combined",
+      "initialSeats": 404, "initialVoteShare": 49.10,
+      "description": "The completed 1984–85 election cycle produced Congress’s highest seat total in this series.",
+      "note": "Combined cycle: 414 seats and 48.12% of valid votes, per ECI 2023. Initial 1984 count: 404 and 49.10%; deferred Assam and Punjab polls in 1985 added 10 Congress wins."
+    },
+    {
+      "year": 1989, "label": "1989", "ordinal": 9, "party": "INC", "seats": 197, "totalSeats": 529, "voteShare": 39.53, "era": "fragmentation", "outcome": "Opposition at government formation", "source": "historical",
+      "description": "Congress remained the largest party by seats but lost its majority. The completed-cycle comparison with 1984–85 shows a loss of 217 seats.",
+      "note": "ECI’s reported election-seat total is 529. Being the largest party did not itself establish majority support for forming government."
+    },
+    {
+      "year": 1991, "label": "1991–92", "ordinal": 10, "party": "INC", "seats": 244, "totalSeats": 534, "voteShare": 36.40, "era": "fragmentation", "outcome": "Congress-led government", "source": "combined",
+      "initialSeats": 232, "initialVoteShare": 36.26,
+      "description": "Congress returned to Union government. The completed cycle increased its seat total over 1989, while its national valid vote share was lower.",
+      "note": "Combined cycle: 244 seats and 36.40% of valid votes. Initial 1991 count: 232 and 36.26%; deferred Punjab polls in 1992 added 12 Congress wins."
+    },
+    {
+      "year": 1996, "label": "1996", "ordinal": 11, "party": "INC", "seats": 140, "totalSeats": 543, "voteShare": 28.80, "era": "fragmentation", "outcome": "Outside support to United Front", "source": "historical",
+      "description": "Congress lost 104 seats against the completed 1991–92 cycle and no longer led the Union government.",
+      "note": "The ECI initial-1991 comparison gives a 92-seat loss. This edition uses the completed-cycle comparison consistently."
+    },
+    {
+      "year": 1998, "label": "1998", "ordinal": 12, "party": "INC", "seats": 141, "totalSeats": 543, "voteShare": 25.82, "era": "fragmentation", "outcome": "Opposition", "source": "historical",
+      "description": "Congress gained one seat compared with 1996, while its valid vote share fell by 2.98 percentage points.",
+      "note": "National vote share is measured across the reported election, not only in seats contested by Congress."
+    },
+    {
+      "year": 1999, "label": "1999", "ordinal": 13, "party": "INC", "seats": 114, "totalSeats": 543, "voteShare": 28.30, "era": "fragmentation", "outcome": "Opposition", "source": "historical",
+      "description": "Congress won 27 fewer seats than in 1998 despite a 2.48-percentage-point increase in valid vote share.",
+      "note": "This divergence illustrates why national vote gains do not guarantee more constituency wins. It does not identify a single cause."
+    },
+    {
+      "year": 2004, "label": "2004", "ordinal": 14, "party": "INC", "seats": 145, "totalSeats": 543, "voteShare": 26.53, "era": "coalitions", "outcome": "Congress-led coalition government", "source": "historical",
+      "description": "Congress gained 31 seats and returned to Union government through a coalition, despite a lower national valid vote share than in 1999.",
+      "note": "145 is the Congress party total. UPA partners and outside supporters are not included."
+    },
+    {
+      "year": 2009, "label": "2009", "ordinal": 15, "party": "INC", "seats": 206, "totalSeats": 543, "voteShare": 28.55, "era": "coalitions", "outcome": "Congress-led coalition government", "source": "historical",
+      "description": "Congress gained 61 seats and increased its valid vote share, returning as the leading party of a coalition government.",
+      "note": "Congress’s 206 seats remained below the 272 needed for a majority in a full 543-seat elected House."
+    },
+    {
+      "year": 2014, "label": "2014", "ordinal": 16, "party": "INC", "seats": 44, "totalSeats": 543, "voteShare": 19.52, "era": "recent", "outcome": "Opposition", "source": "2014",
+      "description": "A loss of 162 seats from 2009 brought Congress to its lowest Lok Sabha general-election seat count in this series.",
+      "note": "19.52% is ECI’s valid-vote share. Figures using all votes, including NOTA, have a different denominator."
+    },
+    {
+      "year": 2019, "label": "2019", "ordinal": 17, "party": "INC", "seats": 52, "totalSeats": 543, "voteShare": 19.67, "era": "recent", "outcome": "Opposition", "source": "2019",
+      "description": "Congress increased its tally by eight seats. The 0.15-percentage-point rise in valid vote share left it close to the 2014 level.",
+      "note": "PIB reproduces ECI’s table: 421 Congress candidates, 52 wins and 19.67% of valid votes. This differs from the all-vote share."
+    },
+    {
+      "year": 2024, "label": "2024", "ordinal": 18, "party": "INC", "seats": 99, "totalSeats": 543, "voteShare": 21.40, "era": "recent", "outcome": "Opposition", "source": "2024",
+      "description": "Congress gained 47 seats from 2019. Its 18.23% share of elected seats remained below its 21.40% share of valid votes.",
+      "note": "ECI report 20 covers 542 contested seats; Surat was won unopposed by the BJP. Congress’s 99 is unchanged. Seat share here uses all 543 elected seats; alliance partners are excluded."
+    }
+  ]
+}

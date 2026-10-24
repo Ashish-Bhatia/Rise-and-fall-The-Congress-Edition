@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#143c3b">
+  <title>Congress | An Electoral Story</title>
+  <meta name="description" content="An independent analysis of Indian National Congress election results. Explore every Lok Sabha election from 1951–52 to 2024, plus verified results from 2026.">
+  <meta property="og:title" content="Congress | An Electoral Story">
+  <meta property="og:description" content="18 national elections. Seven decades of change. Explore the figures behind Congress’s rise, decline and recovery.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ashish-bhatia.github.io/Rise-and-fall-The-Congress-Edition/">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://ashish-bhatia.github.io/Rise-and-fall-The-Congress-Edition/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script type="module" src="assets/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Congress, An Electoral Story, home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span>CONGRESS<span class="brand-sub">AN ELECTORAL STORY</span></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#explore">Explore</a>
+      <a href="#analysis">Analysis</a>
+      <a href="#latest">2026 results</a>
+      <a href="#sources">Sources <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero page-width" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-dot"></span> INDEPENDENT ELECTORAL ANALYSIS</p>
+        <h1 id="hero-title">A party.<br>Seven decades.<br><em>A changing India.</em></h1>
+        <p class="hero-description">The electoral story of the Indian National Congress, from the first Lok Sabha election to the latest verified results. Explore the rise, the reversals and the limits of recovery.</p>
+        <a class="button button-dark" href="#explore">Explore the elections <span aria-hidden="true">↓</span></a>
+        <p class="edition-line">1951–52 → 2026 <span>•</span> Evidence before interpretation</p>
+      </div>
+      <aside class="hero-feature" aria-label="The national story in three elections">
+        <div class="feature-top"><span class="eyebrow">THE LONG VIEW</span><span class="feature-index">01 / 18</span></div>
+        <p class="feature-statement">From dominance<br>to competition.</p>
+        <div class="feature-bars" aria-label="Congress seats: 364 in 1951–52, 414 in 1984–85, 99 in 2024">
+          <div><span>364</span><div class="feature-column first"></div><small>1951–52</small></div>
+          <div><span>414</span><div class="feature-column peak"></div><small>1984–85</small></div>
+          <div><span>99</span><div class="feature-column now"></div><small>2024</small></div>
+        </div>
+        <p class="feature-caption">Congress seats won • general election cycles<br>1984–85 includes deferred polls. <a href="#methodology">How we count ↗</a></p>
+      </aside>
+    </section>
+
+    <div class="latest-strip">
+      <div class="page-width latest-strip-inner"><span class="eyebrow"><span class="small-dot"></span> LATEST VERIFIED</span><p><time datetime="2026-10-09">9 October 2026</time> · Congress finishes third in the Nagaon Lok Sabha by-election.</p><a href="#latest">Read the result <span aria-hidden="true">↗</span></a></div>
+    </div>
+
+    <section class="page-width section" id="explore" aria-labelledby="explore-title">
+      <div class="section-heading"><div><p class="eyebrow section-number">01 / THE NATIONAL RECORD</p><h2 id="explore-title">Every election has a story.</h2><p>Start with the numbers. Select an election to see what changed.</p></div><span class="data-stamp">18 LOK SABHA ELECTIONS<br><span>1951–52 to 2024</span></span></div>
+      <div class="explorer" id="explorer" hidden>
+        <div class="chart-panel">
+          <div class="chart-toolbar"><p class="chart-title" id="chart-title">Congress seats won</p><div class="segmented" role="group" aria-label="Chart measure"><button type="button" data-metric="seats" aria-pressed="true">Seats</button><button type="button" data-metric="voteShare" aria-pressed="false">Vote share</button><button type="button" data-metric="seatShare" aria-pressed="false">Seat share</button></div></div>
+          <p class="chart-hint" id="chart-hint">Select a bar or use the election selector. Arrow keys move between bars.</p>
+          <div class="chart-scroll" tabindex="0" role="region" aria-label="Interactive election chart, scroll horizontally on small screens"><div class="chart-inner"><div class="chart-axis" id="chart-axis" aria-hidden="true"></div><div class="chart-bars" id="chart-bars" role="group" aria-labelledby="chart-title" aria-describedby="chart-hint"></div></div></div>
+          <div class="chart-foot"><span><i class="legend-dot" aria-hidden="true"></i> Congress’s own result</span><span>Source: Election Commission of India</span></div>
+          <p class="chart-note">Election cycles include deferred polls in 1984–85 and 1991–92. Vote share uses the ECI valid-vote basis. <a href="#methodology">Read the definitions ↗</a></p>
+        </div>
+        <aside class="election-detail" aria-labelledby="election-title">
+          <div class="detail-heading"><span class="eyebrow">ELECTION PROFILE</span><label class="sr-only" for="election-select">Select election</label><select id="election-select"></select></div>
+          <h3 id="election-title">2024</h3><p class="detail-outcome" id="election-outcome"></p>
+          <div class="detail-stat"><strong id="election-seats"></strong><span>Congress seats won</span></div>
+          <div class="detail-pair"><div><strong id="election-votes"></strong><span>valid vote share</span></div><div><strong id="election-share"></strong><span>elected seat share</span></div></div>
+          <p class="detail-change" id="election-change"></p>
+          <p class="detail-description" id="election-description"></p>
+          <p class="detail-note" id="election-note"></p>
+          <a class="text-link" id="election-source" href="#sources">Read the source <span aria-hidden="true">↗</span></a>
+        </aside>
+      </div>
+      <p id="load-status" class="load-status" role="status">Loading the election explorer…</p>
+      <noscript><p>The interactive explorer needs JavaScript. The full national record is available as <a href="data/elections.csv" download>a CSV download</a>. The analysis, current results and source notes below remain readable.</p></noscript>
+      <p class="sr-only" role="status" aria-live="polite" aria-atomic="true" id="explorer-status"></p>
+      <div class="takeaway"><span class="eyebrow">READING THE RESULT</span><p>Congress’s 2024 gain was substantial: <strong>47 more seats than in 2019</strong>. Its 99 seats still stood <strong>107 below its 2009 result</strong>. Recovery and long-term decline are both part of the record.</p><a href="#source-2024">Sources: ECI 2024, ECI historical tables ↗</a></div>
+    </section>
+
+    <section class="analysis-section" id="analysis" aria-labelledby="analysis-title">
+      <div class="page-width section">
+        <div class="section-heading"><div><p class="eyebrow section-number">02 / INDEPENDENT ANALYSIS</p><h2 id="analysis-title">The result is more than a seat count.</h2><p>An interpretation of the published record. Electoral totals alone do not establish why voters changed their choices.</p></div><span class="editorial-label">ANALYSIS</span></div>
+        <div class="findings">
+          <article class="finding"><span class="finding-number">01</span><div><h3>Dominance rested on a large vote base and a larger seat share.</h3><p>In 1951–52, Congress won 364 of 489 seats with 44.99% of valid votes. That is 74.44% of the elected seats. Winning constituencies under first-past-the-post produced a seat share well above its national vote share.</p><p class="finding-reading">Reading: early parliamentary dominance did not require a majority of votes across India.</p><a href="#source-historical">ECI historical tables ↗</a></div></article>
+          <article class="finding"><span class="finding-number">02</span><div><h3>The decline was interrupted by major returns.</h3><p>Congress fell from 352 seats in 1971 to 154 in 1977, returned with 353 in 1980, and reached 414 across the 1984–85 cycle. A continuous downward trend would miss these reversals.</p><p class="finding-reading">Reading: the timing and scale of each reversal matter more than a single “rise and fall” label.</p><a href="#source-historical">ECI 2014 and 2023 tables ↗</a></div></article>
+          <article class="finding"><span class="finding-number">03</span><div><h3>More votes did not always mean more seats.</h3><p>Between 1998 and 1999, Congress’s valid vote share rose from 25.82% to 28.30%, while its seats fell from 141 to 114. A national average does not describe where votes were won or how closely each constituency was contested.</p><p class="finding-reading">Reading: vote distribution and constituency competition are essential to understanding seat conversion.</p><a href="#source-historical">ECI, Table 6.4.5 ↗</a></div></article>
+          <article class="finding"><span class="finding-number">04</span><div><h3>Coalition government changed the measure of success.</h3><p>Congress returned to government with 145 seats in 2004 and increased its tally to 206 in 2009. Both were below an independent majority. Congress-led coalitions made government formation possible with a smaller party total.</p><p class="finding-reading">Reading: assess party performance and coalition power separately.</p><a href="#source-combined">ECI, seats and prime-ministerial chronology ↗</a></div></article>
+          <article class="finding"><span class="finding-number">05</span><div><h3>The 2014 defeat remains the national seat-count low.</h3><p>Congress fell from 206 seats in 2009 to 44 in 2014, a loss of 162 seats. Its valid vote share fell from 28.55% to 19.52%. The 52 seats won in 2019 represented a limited improvement.</p><p class="finding-reading">Reading: the scale of the setback involved both reduced support and fewer constituency wins.</p><a href="#source-2014">ECI 2014; PIB’s ECI 2019 table ↗</a></div></article>
+          <article class="finding"><span class="finding-number">06</span><div><h3>2024 restored competitiveness, with clear limits.</h3><p>Seats rose from 52 to 99, a 90.38% increase. Valid vote share rose from 19.67% to 21.40%, a gain of 1.73 percentage points. Congress won 18.23% of 543 seats and remained in opposition.</p><p class="finding-reading">Reading: the seat recovery was proportionately larger than the increase in national vote share. These totals do not isolate the effect of alliances or leadership.</p><a href="#source-2024">ECI national-party report; PRS 18th Lok Sabha profile ↗</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-width section" id="compare" aria-labelledby="compare-title">
+      <div class="section-heading"><div><p class="eyebrow section-number">03 / MAKE THE COMPARISON</p><h2 id="compare-title">Choose two elections.</h2><p>Compare the same measures, with the same definitions.</p></div></div>
+      <div id="comparison" class="comparison" hidden>
+        <div class="compare-selectors"><div><label for="compare-from">From</label><select id="compare-from"></select></div><span aria-hidden="true">→</span><div><label for="compare-to">To</label><select id="compare-to"></select></div></div>
+        <div class="compare-results" role="status" aria-live="polite" aria-atomic="true"><div><span>CHANGE IN SEATS</span><strong id="compare-seats"></strong><small id="compare-seats-detail"></small></div><div><span>VALID VOTE SHARE</span><strong id="compare-votes"></strong><small id="compare-votes-detail"></small></div><div><span>ELECTED SEAT SHARE</span><strong id="compare-share"></strong><small id="compare-share-detail"></small></div></div>
+        <p class="compare-note" id="compare-note"></p>
+      </div>
+      <p class="small-note">“pp” means percentage points. Seat share = seats won ÷ elected seats in the reported cycle × 100. Changing constituency boundaries, party splits and seats contested limit direct comparisons over time.</p>
+    </section>
+
+    <section class="latest-section" id="latest" aria-labelledby="latest-title">
+      <div class="page-width section">
+        <div class="section-heading"><div><p class="eyebrow section-number">04 / BEYOND THE GENERAL ELECTION</p><h2 id="latest-title">The story continues in 2026.</h2><p>Verified election outcomes, reviewed on <time datetime="2026-10-24">24 October 2026</time>.</p></div><span class="data-stamp">DATED RESULTS<br><span>Party seats, not alliance totals</span></span></div>
+        <div class="latest-layout">
+          <article class="latest-feature"><p class="eyebrow">LOK SABHA BY-ELECTION · 9 OCT 2026</p><h3>Nagaon, Assam</h3><p class="latest-headline">Congress finishes third.</p><dl class="by-election-stat"><div><dt>Congress votes</dt><dd>1,29,492</dd></div><div><dt>Share of all votes</dt><dd>8.90%</dd></div></dl><div class="result-lines"><p><span>1. BJP · Devasish Sharma</span><strong>7,14,349</strong></p><p><span>2. AIUDF · Mohammed Badruddin Ajmal</span><strong>5,72,125</strong></p><p><span>3. INC · Sibamoni Bora</span><strong>1,29,492</strong></p></div><p class="latest-reading">This constituency result shows a setback after the 2024 national recovery. One by-election does not establish a national voting trend.</p><a href="https://results.eci.gov.in/ResultPcByeOct2026/ConstituencywiseS039.htm">ECI declared result ↗</a><p class="source-caveat">ECI’s results portal reports Returning Officer entries. Statutory Form 20 remains the final record.</p></article>
+          <div class="state-panel"><p class="eyebrow">MAY 2026 · ASSEMBLY GENERAL ELECTIONS</p><h3>Five states and territories.<br>Different outcomes.</h3><p class="small-note">Congress seats won, out of elected assembly seats. These are election results, not current membership.</p><div class="state-list">
+            <div class="state-row"><a href="#source-kerala">Kerala</a><span><strong>63</strong> / 140</span><div class="state-track"><i style="width:45%"></i></div></div>
+            <div class="state-row"><a href="#source-assam">Assam</a><span><strong>19</strong> / 126</span><div class="state-track"><i style="width:15.0794%"></i></div></div>
+            <div class="state-row"><a href="#source-tamil">Tamil Nadu</a><span><strong>5</strong> / 234</span><div class="state-track"><i style="width:2.1368%"></i></div></div>
+            <div class="state-row"><a href="#source-bengal">West Bengal</a><span><strong>2</strong> / 294</span><div class="state-track"><i style="width:0.6803%"></i></div></div>
+            <div class="state-row"><a href="#source-puducherry">Puducherry</a><span><strong>1</strong> / 30</span><div class="state-track"><i style="width:3.3333%"></i></div></div>
+          </div><p class="state-caption">Bar length shows Congress’s share of seats in each assembly. Congress’s 63 seats in Kerala are separate from the wider UDF total.</p></div>
+        </div>
+        <article class="secondary-update"><span class="eyebrow">ASSEMBLY BY-ELECTION · 9 OCT 2026</span><p><strong>Thattanchavady, Puducherry.</strong> Congress’s E. Vinayagam finished second with 4,876 votes (22.31% of all votes). AINRC’s Ashok Anand won with 13,358 votes.</p><a href="https://results.eci.gov.in/ResultAcByeOct2026/ConstituencywiseU079.htm">ECI result ↗</a></article>
+        <p class="small-note">Coverage: all 18 Lok Sabha general elections; all five May 2026 assembly general elections; selected October 2026 by-elections. A complete historical assembly or by-election series is not included. National general-election totals remain separate from later vacancies, defections and by-elections.</p>
+      </div>
+    </section>
+
+    <section class="page-width section" id="data" aria-labelledby="data-title">
+      <div class="section-heading"><div><p class="eyebrow section-number">05 / THE OPEN RECORD</p><h2 id="data-title">Inspect the data yourself.</h2><p>Every national result in one table, with its source and counting note.</p></div><a class="button button-outline" href="data/elections.csv" download>Download CSV <span aria-hidden="true">↓</span></a></div>
+      <div id="data-controls" class="data-controls" hidden><div><label for="era-filter">Election period</label><select id="era-filter"><option value="all">All elections</option><option value="early">1951–52 to 1967</option><option value="reversals">1971 to 1984–85</option><option value="fragmentation">1989 to 1999</option><option value="coalitions">2004 to 2009</option><option value="recent">2014 to 2024</option></select></div><div><label for="data-sort">Sort results</label><select id="data-sort"><option value="chronological">Oldest first</option><option value="newest">Newest first</option><option value="seats">Most seats</option><option value="voteShare">Highest vote share</option></select></div><p id="table-count" role="status" aria-live="polite"></p></div>
+      <div class="table-wrap" id="table-wrap" hidden tabindex="0" role="region" aria-label="National election results table, scroll horizontally on small screens"><table><caption class="sr-only">Congress results in all 18 Lok Sabha general-election cycles</caption><thead><tr><th scope="col">Election</th><th scope="col">Party label</th><th scope="col" class="numeric">Seats won</th><th scope="col" class="numeric">Valid vote share</th><th scope="col" class="numeric">Seat share</th><th scope="col">Result & source</th></tr></thead><tbody id="results-body"></tbody></table></div>
+      <p class="small-note">1984–85: 414 seats / 48.12% across the combined cycle; initial 1984 count: 404 / 49.10%. 1991–92: 244 / 36.40% combined; initial 1991 count: 232 / 36.26%. See the notes attached to each result.</p>
+    </section>
+
+    <section class="method-section" id="methodology" aria-labelledby="method-title"><div class="page-width section"><div class="section-heading"><div><p class="eyebrow section-number">06 / SOURCES & METHODOLOGY</p><h2 id="method-title">A record you can check.</h2><p>Public evidence, explicit definitions and room for correction.</p></div></div>
+      <div class="method-grid"><article><h3>What counts as Congress?</h3><p>The principal Congress series follows ECI’s party labels, including INC(I) in 1980. Other Congress factions and alliance partners are excluded. Party splits mean organisational identity changes across the series.</p></article><article><h3>Which vote share?</h3><p>The national series uses ECI’s share of valid votes. Recent reports exclude NOTA and invalid votes. The 2024 statistical report gives 21.40%; the widely quoted 21.19% comes from earlier all-vote reporting. Reporting stage and denominator both differ. By-election figures retain the portal’s all-vote basis.</p></article><article><h3>Which seats?</h3><p>These are election-cycle constituency wins, including multi-member constituencies in the early elections. Nominated members are excluded. The 1984–85 and 1991–92 rows include deferred polls, following ECI’s 2023 combined tables. Seat-share denominators follow the same cycle.</p></article><article><h3>What does analysis establish?</h3><p>Calculations are reproducible from the published figures. Interpretations are labelled. These totals do not establish voter motives, the causal effect of a leader, the quality of government or the validity of an allegation. No forecast or simulated result is presented.</p></article></div>
+      <details class="method-details"><summary>Counting notes and limitations</summary><div><p>The first series entry is India’s first post-independence Lok Sabha general election, held in 1951–52. Earlier colonial elections are outside this series.</p><p>ECI’s historical tables give 489 elected seats in 1951–52, 494 in 1957 and 1962, 520 in 1967, 518 in 1971, 542 in 1977, 529 in 1980 and 1989, 541 in 1984–85, 534 in 1991–92, and 543 from 1996 onward. These are the denominators used here, rather than a fixed present-day House size.</p><p>In 2024, ECI’s national-party report covers 542 contested constituencies. Surat was won unopposed by the BJP. Congress’s 99-seat count is unaffected; its seat share here uses all 543 elected constituencies. The report gives 13,67,58,952 Congress votes and 63,89,90,692 valid votes nationally.</p><p>Some archived ECI result links are intermittently unavailable. Kerala and West Bengal’s May 2026 party totals were checked against indexed ECI result tables and independent winner records. Assam, Tamil Nadu and Puducherry totals are supported by ADR’s published winner analyses. Links identify the evidence used; an unavailable archive is not presented as a fresh download.</p><p>National figures are not current Lok Sabha membership. The 2026 state panel is not a complete historical state-election database. The latest-result panel is selective and is not an exhaustive list of every by-election. Verification date: 24 October 2026. Source corrections should be checked against the statutory election forms where available.</p></div></details>
+      <div id="sources" class="sources"><div class="sources-heading"><h3>The source shelf</h3><span class="eyebrow">PRIMARY RECORDS FIRST</span></div><ol class="source-list">
+        <li id="source-historical"><span class="source-type">ECI · HISTORICAL DATA</span><h4><a id="historical-link" href="https://www.eci.gov.in/eci-backend/public/api/download?url=LMAhAK6sOPBp%2FNFF0iRfXbEB1EVSLT41NNLRjYNJJP1KivrUxbfqkDatmHy12e%2FzVx8fLfn2ReU7TfrqYobgIp3FkHJEH03HdUqVNGXd%2BrAoFcaULKPkZEzGFJFSyEuIfH2yBBtIlt8LEiiH3eBODI3oWxlqGvTyGsxE%2Bvy01mIWg%2FDAyOIXSdAs9qnmsPCahtDHL6KmVVf5hrvMeLSKAg%3D%3D">Electoral Statistics, Tables 6.4.3–6.4.5</a></h4><p>1951–52 to 2009: Congress seats and valid vote shares; initial and deferred counts. Printed pages 29–31. Distinguishes initial-year and deferred-election results.</p></li>
+        <li id="source-combined"><span class="source-type">ECI · COMBINED CYCLES</span><h4><a id="combined-link" href="https://www.eci.gov.in/eci-backend/public/api/download?url=LMAhAK6sOPBp%2FNFF0iRfXbEB1EVSLT41NNLRjYNJJP1KivrUxbfqkDatmHy12e%2FzVx8fLfn2ReU7TfrqYobgItVaDT1%2FN9NoActktqO4y0Ti6YTNhJb3duBnsypGrGbsFOwC3iVoQ82MxhlUAMbtgRkU2VvXw6n8RkOkaSlgUgdOo00ndBxGzBsC%2B0pwZ4d5">Electoral Statistics 2023, Tables 6.9–6.11 and 7.1</a></h4><p>Completed 1984–85 and 1991–92 cycles, historical seat denominators, and prime-ministerial chronology. Printed pages 45–49 and 75–77.</p></li>
+        <li id="source-2014"><span class="source-type">ECI · 2014</span><h4><a href="https://hindi.eci.gov.in/files/file/2820-performance-of-national-parties/">Performance of National Parties, 2014</a></h4><p>Congress: 44 seats and 19.52% of valid votes. ECI’s archived table is indexed; the legacy download is intermittently unavailable.</p></li>
+        <li id="source-2019"><span class="source-type">PIB · ECI TABLE</span><h4><a href="https://static.pib.gov.in/WriteReadData/userfiles/GE2024/files/basic-html/page67.html">General Elections 2024 flipbook, page 65</a></h4><p>Reproduces ECI’s 2019 national-party table: Congress 52 seats, 19.67% of valid votes.</p></li>
+        <li id="source-2024"><span class="source-type">ECI · 2024</span><h4><a href="https://www.eci.gov.in/eci-backend/public/all_files/GE-2024-statistical-report/20-Performance-of-National-Parties.pdf">Performance of National Parties, 2024</a></h4><p>Congress: 328 contested constituencies, 99 wins, 13,67,58,952 votes, 21.40% of valid votes. Includes the report’s Surat exclusion and statutory-record caveat.</p></li>
+        <li id="source-parliament"><span class="source-type">PRS · PARLIAMENT</span><h4><a href="https://prsindia.org/parliamenttrack/vital-stats/profile-of-the-18th-lok-sabha">Profile of the 18th Lok Sabha</a></h4><p>Confirms the 2024 composition: 543 elected seats, Congress 99, BJP 240; the 272-seat majority threshold.</p></li>
+        <li id="source-kerala"><span class="source-type">ECI + ADR · KERALA 2026</span><h4><a href="https://results.eci.gov.in/ResultAcGenMay2026/partywiseresult-S11.htm">Kerala assembly party result</a></h4><p>Congress 63 of 140. Checked against the indexed ECI table and <a href="https://adrindia.org/sites/default/files/Kerala_Assembly_Elections_2026_Criminal_and_Financial_background_details_of_Winning_Candidates_Eng.pdf">ADR’s winner analysis</a>.</p></li>
+        <li id="source-assam"><span class="source-type">ADR · ASSAM 2026</span><h4><a href="https://adrindia.org/content/Assam-Assembly-Elections-2026-Criminal-and-Financial-background-details-of-Winning-Candidates">Assam assembly winning candidates</a></h4><p>Congress 19 of 126. Uses the party-wise winner totals in ADR’s affidavit analysis.</p></li>
+        <li id="source-tamil"><span class="source-type">ADR · TAMIL NADU 2026</span><h4><a href="https://adrindia.org/content/Tamil-Nadu-Assembly-Elections-2026-Criminal-and-Financial-background-details-of-Winning-Candidates">Tamil Nadu assembly winning candidates</a></h4><p>Congress 5 of 234. ADR analysed 233 winners; its omitted unclear affidavit belongs to a TVK winner.</p></li>
+        <li id="source-bengal"><span class="source-type">ECI · WEST BENGAL 2026</span><h4><a href="https://results.eci.gov.in/ResultAcGenMay2026/partywiseresult-S25.htm">West Bengal assembly party result</a></h4><p>Congress 2 of 294. Indexed ECI party table and <a href="https://results.eci.gov.in/ResultAcGenMay2026/partywisewinresult-742S25.htm">named Congress winners</a>.</p></li>
+        <li id="source-puducherry"><span class="source-type">ADR · PUDUCHERRY 2026</span><h4><a href="https://adrindia.org/content/Puducherry-Assembly-Elections-2026-Criminal-and-Financial-background-details-of-Winning-Candidates">Puducherry assembly winning candidates</a></h4><p>Congress 1 of 30 elected seats. Uses ADR’s analysis of all 30 winners; nominated members are excluded.</p></li>
+        <li id="source-october"><span class="source-type">ECI · OCTOBER 2026</span><h4><a href="https://results.eci.gov.in/ResultPcByeOct2026/ConstituencywiseS039.htm">Nagaon parliamentary by-election</a></h4><p>Declared candidate totals, updated 9 October 2026, 11:06 pm. Also: <a href="https://results.eci.gov.in/ResultAcByeOct2026/ConstituencywiseU079.htm">Thattanchavady assembly result</a>. Portal percentages include NOTA; Form 20 remains authoritative.</p></li>
+      </ol></div>
+    </div></section>
+  </main>
+  <footer class="site-footer page-width"><div><a class="footer-brand" href="#top">Congress / An Electoral Story</a><p>Rise and Fall: The Congress Edition<br>Created by Ashish Bhatia. Independent of political parties.</p></div><div><p>Data reviewed: 24 October 2026<br>National general-election series: 1951–52 to 2024</p><a href="https://github.com/Ashish-Bhatia/Rise-and-fall-The-Congress-Edition">Public source & corrections ↗</a><span class="footer-divider">·</span><a href="#methodology">Methodology</a></div></footer>
+</body>
+</html>
