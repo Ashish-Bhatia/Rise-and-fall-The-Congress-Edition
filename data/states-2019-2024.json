@@ -1,0 +1,1779 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-10-24",
+  "party": "Indian National Congress",
+  "partyCode": "INC",
+  "years": [
+    2019,
+    2024
+  ],
+  "definitions": {
+    "validVoteShare": "INC candidate votes divided by all valid candidate votes across the entire reported state or territory, multiplied by 100. NOTA and invalid votes are excluded. It is not vote share only in constituencies contested by INC.",
+    "strikeRate": "Seats won divided by constituencies contested by INC, multiplied by 100. Zero contested seats produces null, not zero.",
+    "seatsContested": "Number of distinct constituencies with an INC candidate in ECI report 33. A person contesting two constituencies counts twice. Rejected or withdrawn nominations and allied or independent candidates are excluded.",
+    "comparison": "35 non-overlapping comparable areas cover all 36 reported units in each year. Reorganised units are aggregated explicitly from raw votes, valid-vote denominators and counts.",
+    "precision": "Shares and percentage-point changes are calculated from integer votes and denominators before rounding to two decimal places. Subtracting already rounded display values may differ by 0.01 pp."
+  },
+  "sources": {
+    "eci-2019-state": {
+      "title": "ECI 2019 report 17, State Wise Seat Won & Valid Votes Polled by Political Parties, including Vellore",
+      "url": "https://www.eci.gov.in/statistical-report/ge/2019/doc/13571",
+      "copyUrl": "https://www.scribd.com/document/1067117331/17-State-Wise-Seat-Won-Valid-Votes-Polled-by-Political-Parties",
+      "access": "ECI-authored report, read through the public reproduction. The older ECI Hindi-hosted report was also read; it excludes Vellore and has a different Tamil Nadu denominator. The comparison uses the completed 39-seat Tamil Nadu cycle."
+    },
+    "eci-2019-candidates": {
+      "title": "ECI 2019 report 33, Constituency Wise Detailed Results",
+      "url": "https://www.eci.gov.in/statistical-report/ge/2019/1551",
+      "copyUrl": "https://www.scribd.com/document/586185219/33-Constituency-Wise-Detailed-Result",
+      "access": "ECI-authored 638-page report, read through the public reproduction. Counts use the INC candidate rows in each constituency. Congress did not contest Vellore; its deferred poll does not alter these INC counts or votes."
+    },
+    "eci-2024-state": {
+      "title": "ECI 2024 report 17, State Wise Seat Won & Valid Votes Polled by Political Parties",
+      "url": "https://www.eci.gov.in/general-election-to-loksabha-2024-statistical-reports",
+      "copyUrl": "https://www.scribd.com/document/914928023/17-State-Wise-Seat-Won-Valid-Votes-Polled-by-Political-Parties",
+      "access": "ECI-authored report, read through the public reproduction. Congress votes reconcile state by state with report 33 and nationally with report 20. Report 18 lists parties with wins and alone is insufficient for zero-win states."
+    },
+    "eci-2024-candidates": {
+      "title": "ECI 2024 report 33, Constituency Wise Detailed Results",
+      "url": "https://www.eci.gov.in/eci-backend/public/all_files/GE-2024-statistical-report/33-Constituency-Wise-Detailed-Result.pdf",
+      "copyUrl": "https://www.scribd.com/document/892036016/33-Constituency-Wise-Detailed-Result",
+      "access": "Official PDF text was accessible. The complete ECI-authored 622-page public reproduction supplied the candidate-row aggregation. All 328 INC rows and their 136758952 votes reconcile with report 20."
+    },
+    "eci-2024-national": {
+      "title": "ECI 2024 report 20, Performance of National Parties",
+      "url": "https://www.eci.gov.in/eci-backend/public/all_files/GE-2024-statistical-report/20-Performance-of-National-Parties.pdf"
+    },
+    "eci-2019-national": {
+      "title": "PIB General Elections 2024, printed page 65, ECI 2019 national-party table",
+      "url": "https://static.pib.gov.in/WriteReadData/userfiles/GE2024/files/basic-html/page67.html"
+    },
+    "reorganisation-jk": {
+      "title": "Ministry of Home Affairs, maps of the new Union Territories of Jammu and Kashmir and Ladakh",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1590112&lang=2&reg=3"
+    },
+    "delimitation": {
+      "title": "ECI Electoral Statistics, delimitation notes for Jammu and Kashmir and Assam",
+      "url": "https://www.eci.gov.in/eci-backend/public/api/download?url=LMAhAK6sOPBp%2FNFF0iRfXbEB1EVSLT41NNLRjYNJJP1KivrUxbfqkDatmHy12e%2FzGjJMI0%2FjETs7fjrM8lYn4q0vCivj94MhpU3oJn7R5vrT16TiGkIgrvGfcMND0TasK6qlsuh5iZIkAbkwBAifqg%3D%3D"
+    }
+  },
+  "records": [
+    {
+      "year": 2019,
+      "unit": "Andaman and Nicobar Islands",
+      "kind": "union-territory",
+      "totalSeats": 1,
+      "seatsWon": 1,
+      "seatsContested": 1,
+      "congressVotes": 95308,
+      "validVotes": 205884,
+      "validVoteShare": 46.29208681,
+      "reportedValidVoteShare": 46.2921,
+      "strikeRate": 100.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Andhra Pradesh",
+      "kind": "state",
+      "totalSeats": 25,
+      "seatsWon": 0,
+      "seatsContested": 25,
+      "congressVotes": 406977,
+      "validVotes": 31143712,
+      "validVoteShare": 1.30677101,
+      "reportedValidVoteShare": 1.3068,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Arunachal Pradesh",
+      "kind": "state",
+      "totalSeats": 2,
+      "seatsWon": 0,
+      "seatsContested": 2,
+      "congressVotes": 134888,
+      "validVotes": 644627,
+      "validVoteShare": 20.92496901,
+      "reportedValidVoteShare": 20.925,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Assam",
+      "kind": "state",
+      "totalSeats": 14,
+      "seatsWon": 3,
+      "seatsContested": 14,
+      "congressVotes": 6373659,
+      "validVotes": 17807713,
+      "validVoteShare": 35.79156403,
+      "reportedValidVoteShare": 35.7916,
+      "strikeRate": 21.42857143,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Bihar",
+      "kind": "state",
+      "totalSeats": 40,
+      "seatsWon": 1,
+      "seatsContested": 9,
+      "congressVotes": 3140797,
+      "validVotes": 39989711,
+      "validVoteShare": 7.85401275,
+      "reportedValidVoteShare": 7.854,
+      "strikeRate": 11.11111111,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Chandigarh",
+      "kind": "union-territory",
+      "totalSeats": 1,
+      "seatsWon": 0,
+      "seatsContested": 1,
+      "congressVotes": 184218,
+      "validVotes": 452233,
+      "validVoteShare": 40.73519624,
+      "reportedValidVoteShare": 40.7352,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Chhattisgarh",
+      "kind": "state",
+      "totalSeats": 11,
+      "seatsWon": 2,
+      "seatsContested": 11,
+      "congressVotes": 5569183,
+      "validVotes": 13418188,
+      "validVoteShare": 41.50473223,
+      "reportedValidVoteShare": 41.5047,
+      "strikeRate": 18.18181818,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Dadra and Nagar Haveli",
+      "kind": "union-territory",
+      "totalSeats": 1,
+      "seatsWon": 0,
+      "seatsContested": 1,
+      "congressVotes": 8608,
+      "validVotes": 196033,
+      "validVoteShare": 4.39109742,
+      "reportedValidVoteShare": 4.3911,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Daman and Diu",
+      "kind": "union-territory",
+      "totalSeats": 1,
+      "seatsWon": 0,
+      "seatsContested": 1,
+      "congressVotes": 27655,
+      "validVotes": 85982,
+      "validVoteShare": 32.16370868,
+      "reportedValidVoteShare": 32.1637,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Delhi",
+      "kind": "union-territory",
+      "totalSeats": 7,
+      "seatsWon": 0,
+      "seatsContested": 7,
+      "congressVotes": 1953900,
+      "validVotes": 8633358,
+      "validVoteShare": 22.63198167,
+      "reportedValidVoteShare": 22.632,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Goa",
+      "kind": "state",
+      "totalSeats": 2,
+      "seatsWon": 1,
+      "seatsContested": 2,
+      "congressVotes": 366158,
+      "validVotes": 840704,
+      "validVoteShare": 43.55373592,
+      "reportedValidVoteShare": 43.5537,
+      "strikeRate": 50.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Gujarat",
+      "kind": "state",
+      "totalSeats": 26,
+      "seatsWon": 0,
+      "seatsContested": 26,
+      "congressVotes": 9337084,
+      "validVotes": 28681032,
+      "validVoteShare": 32.55490946,
+      "reportedValidVoteShare": 32.5549,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Haryana",
+      "kind": "state",
+      "totalSeats": 10,
+      "seatsWon": 0,
+      "seatsContested": 10,
+      "congressVotes": 3604106,
+      "validVotes": 12639755,
+      "validVoteShare": 28.51404952,
+      "reportedValidVoteShare": 28.514,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Himachal Pradesh",
+      "kind": "state",
+      "totalSeats": 4,
+      "seatsWon": 0,
+      "seatsContested": 4,
+      "congressVotes": 1051113,
+      "validVotes": 3817724,
+      "validVoteShare": 27.53245127,
+      "reportedValidVoteShare": 27.5325,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Jammu and Kashmir",
+      "kind": "state",
+      "totalSeats": 6,
+      "seatsWon": 0,
+      "seatsContested": 5,
+      "congressVotes": 1011527,
+      "validVotes": 3530883,
+      "validVoteShare": 28.64798975,
+      "reportedValidVoteShare": 28.648,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Jharkhand",
+      "kind": "state",
+      "totalSeats": 14,
+      "seatsWon": 1,
+      "seatsContested": 7,
+      "congressVotes": 2338466,
+      "validVotes": 14772593,
+      "validVoteShare": 15.82975988,
+      "reportedValidVoteShare": 15.8298,
+      "strikeRate": 14.28571429,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Karnataka",
+      "kind": "state",
+      "totalSeats": 28,
+      "seatsWon": 1,
+      "seatsContested": 21,
+      "congressVotes": 11203016,
+      "validVotes": 34887872,
+      "validVoteShare": 32.11149135,
+      "reportedValidVoteShare": 32.1115,
+      "strikeRate": 4.76190476,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Kerala",
+      "kind": "state",
+      "totalSeats": 20,
+      "seatsWon": 15,
+      "seatsContested": 16,
+      "congressVotes": 7596610,
+      "validVotes": 20281620,
+      "validVoteShare": 37.45563717,
+      "reportedValidVoteShare": 37.4556,
+      "strikeRate": 93.75,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Lakshadweep",
+      "kind": "union-territory",
+      "totalSeats": 1,
+      "seatsWon": 0,
+      "seatsContested": 1,
+      "congressVotes": 22028,
+      "validVotes": 46909,
+      "validVoteShare": 46.95900573,
+      "reportedValidVoteShare": 46.959,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Madhya Pradesh",
+      "kind": "state",
+      "totalSeats": 29,
+      "seatsWon": 1,
+      "seatsContested": 29,
+      "congressVotes": 12733074,
+      "validVotes": 36569626,
+      "validVoteShare": 34.8187154,
+      "reportedValidVoteShare": 34.8187,
+      "strikeRate": 3.44827586,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Maharashtra",
+      "kind": "state",
+      "totalSeats": 48,
+      "seatsWon": 1,
+      "seatsContested": 25,
+      "congressVotes": 8792237,
+      "validVotes": 53565479,
+      "validVoteShare": 16.41399865,
+      "reportedValidVoteShare": 16.414,
+      "strikeRate": 4.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Manipur",
+      "kind": "state",
+      "totalSeats": 2,
+      "seatsWon": 0,
+      "seatsContested": 2,
+      "congressVotes": 398387,
+      "validVotes": 1611941,
+      "validVoteShare": 24.71473832,
+      "reportedValidVoteShare": 24.7147,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Meghalaya",
+      "kind": "state",
+      "totalSeats": 2,
+      "seatsWon": 1,
+      "seatsContested": 2,
+      "congressVotes": 660114,
+      "validVotes": 1356357,
+      "validVoteShare": 48.66816037,
+      "reportedValidVoteShare": 48.6682,
+      "strikeRate": 50.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Mizoram",
+      "kind": "state",
+      "totalSeats": 1,
+      "seatsWon": 0,
+      "seatsContested": 0,
+      "congressVotes": 0,
+      "validVotes": 497112,
+      "validVoteShare": 0.0,
+      "reportedValidVoteShare": 0,
+      "strikeRate": null,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Nagaland",
+      "kind": "state",
+      "totalSeats": 1,
+      "seatsWon": 0,
+      "seatsContested": 1,
+      "congressVotes": 484166,
+      "validVotes": 1004293,
+      "validVoteShare": 48.20963603,
+      "reportedValidVoteShare": 48.2096,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Odisha",
+      "kind": "state",
+      "totalSeats": 21,
+      "seatsWon": 1,
+      "seatsContested": 18,
+      "congressVotes": 3285339,
+      "validVotes": 23483298,
+      "validVoteShare": 13.99010906,
+      "reportedValidVoteShare": 13.9901,
+      "strikeRate": 5.55555556,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Puducherry",
+      "kind": "union-territory",
+      "totalSeats": 1,
+      "seatsWon": 1,
+      "seatsContested": 1,
+      "congressVotes": 444981,
+      "validVotes": 778561,
+      "validVoteShare": 57.15428849,
+      "reportedValidVoteShare": 57.1543,
+      "strikeRate": 100.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Punjab",
+      "kind": "state",
+      "totalSeats": 13,
+      "seatsWon": 8,
+      "seatsContested": 13,
+      "congressVotes": 5523066,
+      "validVotes": 13611009,
+      "validVoteShare": 40.57793217,
+      "reportedValidVoteShare": 40.5779,
+      "strikeRate": 61.53846154,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Rajasthan",
+      "kind": "state",
+      "totalSeats": 25,
+      "seatsWon": 0,
+      "seatsContested": 25,
+      "congressVotes": 11107910,
+      "validVotes": 32113505,
+      "validVoteShare": 34.58952861,
+      "reportedValidVoteShare": 34.5895,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Sikkim",
+      "kind": "state",
+      "totalSeats": 1,
+      "seatsWon": 0,
+      "seatsContested": 1,
+      "congressVotes": 3990,
+      "validVotes": 349467,
+      "validVoteShare": 1.1417387,
+      "reportedValidVoteShare": 1.1417,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Tamil Nadu",
+      "kind": "state",
+      "totalSeats": 39,
+      "seatsWon": 8,
+      "seatsContested": 9,
+      "congressVotes": 5405674,
+      "validVotes": 42842307,
+      "validVoteShare": 12.61760717,
+      "reportedValidVoteShare": 12.6176,
+      "strikeRate": 88.88888889,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Telangana",
+      "kind": "state",
+      "totalSeats": 17,
+      "seatsWon": 3,
+      "seatsContested": 17,
+      "congressVotes": 5496686,
+      "validVotes": 18452097,
+      "validVoteShare": 29.78895027,
+      "reportedValidVoteShare": 29.789,
+      "strikeRate": 17.64705882,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Tripura",
+      "kind": "state",
+      "totalSeats": 2,
+      "seatsWon": 0,
+      "seatsContested": 2,
+      "congressVotes": 545679,
+      "validVotes": 2129998,
+      "validVoteShare": 25.61875645,
+      "reportedValidVoteShare": 25.6188,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Uttar Pradesh",
+      "kind": "state",
+      "totalSeats": 80,
+      "seatsWon": 1,
+      "seatsContested": 67,
+      "congressVotes": 5457352,
+      "validVotes": 85756301,
+      "validVoteShare": 6.36379127,
+      "reportedValidVoteShare": 6.3638,
+      "strikeRate": 1.49253731,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "Uttarakhand",
+      "kind": "state",
+      "totalSeats": 5,
+      "seatsWon": 0,
+      "seatsContested": 5,
+      "congressVotes": 1520767,
+      "validVotes": 4791979,
+      "validVoteShare": 31.73567747,
+      "reportedValidVoteShare": 31.7357,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2019,
+      "unit": "West Bengal",
+      "kind": "state",
+      "totalSeats": 42,
+      "seatsWon": 2,
+      "seatsContested": 40,
+      "congressVotes": 3210491,
+      "validVotes": 56660188,
+      "validVoteShare": 5.66622017,
+      "reportedValidVoteShare": 5.6662,
+      "strikeRate": 5.0,
+      "sources": [
+        "eci-2019-state",
+        "eci-2019-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Andaman and Nicobar Islands",
+      "kind": "union-territory",
+      "totalSeats": 1,
+      "seatsWon": 0,
+      "seatsContested": 1,
+      "congressVotes": 78040,
+      "validVotes": 200705,
+      "validVoteShare": 38.88293764,
+      "reportedValidVoteShare": 38.88,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Andhra Pradesh",
+      "kind": "state",
+      "totalSeats": 25,
+      "seatsWon": 0,
+      "seatsContested": 23,
+      "congressVotes": 912142,
+      "validVotes": 33327256,
+      "validVoteShare": 2.736925,
+      "reportedValidVoteShare": 2.74,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Arunachal Pradesh",
+      "kind": "state",
+      "totalSeats": 2,
+      "seatsWon": 0,
+      "seatsContested": 2,
+      "congressVotes": 219839,
+      "validVotes": 716056,
+      "validVoteShare": 30.70136973,
+      "reportedValidVoteShare": 30.7,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Assam",
+      "kind": "state",
+      "totalSeats": 14,
+      "seatsWon": 3,
+      "seatsContested": 13,
+      "congressVotes": 7510363,
+      "validVotes": 19819569,
+      "validVoteShare": 37.89367468,
+      "reportedValidVoteShare": 37.89,
+      "strikeRate": 23.07692308,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Bihar",
+      "kind": "state",
+      "totalSeats": 40,
+      "seatsWon": 3,
+      "seatsContested": 9,
+      "congressVotes": 3996625,
+      "validVotes": 42549333,
+      "validVoteShare": 9.39292045,
+      "reportedValidVoteShare": 9.39,
+      "strikeRate": 33.33333333,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Chandigarh",
+      "kind": "union-territory",
+      "totalSeats": 1,
+      "seatsWon": 1,
+      "seatsContested": 1,
+      "congressVotes": 216657,
+      "validVotes": 446363,
+      "validVoteShare": 48.53829731,
+      "reportedValidVoteShare": 48.54,
+      "strikeRate": 100.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Chhattisgarh",
+      "kind": "state",
+      "totalSeats": 11,
+      "seatsWon": 1,
+      "seatsContested": 11,
+      "congressVotes": 6183101,
+      "validVotes": 14925237,
+      "validVoteShare": 41.42715456,
+      "reportedValidVoteShare": 41.43,
+      "strikeRate": 9.09090909,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Dadra and Nagar Haveli and Daman and Diu",
+      "kind": "union-territory",
+      "totalSeats": 2,
+      "seatsWon": 0,
+      "seatsContested": 2,
+      "congressVotes": 74748,
+      "validVotes": 291869,
+      "validVoteShare": 25.61011961,
+      "reportedValidVoteShare": 25.61,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Delhi",
+      "kind": "union-territory",
+      "totalSeats": 7,
+      "seatsWon": 0,
+      "seatsContested": 3,
+      "congressVotes": 1688478,
+      "validVotes": 8892762,
+      "validVoteShare": 18.98710434,
+      "reportedValidVoteShare": 18.99,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Goa",
+      "kind": "state",
+      "totalSeats": 2,
+      "seatsWon": 1,
+      "seatsContested": 2,
+      "congressVotes": 359370,
+      "validVotes": 896119,
+      "validVoteShare": 40.10293276,
+      "reportedValidVoteShare": 40.1,
+      "strikeRate": 50.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Gujarat",
+      "kind": "state",
+      "totalSeats": 26,
+      "seatsWon": 1,
+      "seatsContested": 23,
+      "congressVotes": 9108232,
+      "validVotes": 28655853,
+      "validVoteShare": 31.78489225,
+      "reportedValidVoteShare": 31.78,
+      "strikeRate": 4.34782609,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Haryana",
+      "kind": "state",
+      "totalSeats": 10,
+      "seatsWon": 5,
+      "seatsContested": 9,
+      "congressVotes": 5702938,
+      "validVotes": 13012030,
+      "validVoteShare": 43.82819591,
+      "reportedValidVoteShare": 43.83,
+      "strikeRate": 55.55555556,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Himachal Pradesh",
+      "kind": "state",
+      "totalSeats": 4,
+      "seatsWon": 0,
+      "seatsContested": 4,
+      "congressVotes": 1696173,
+      "validVotes": 4046781,
+      "validVoteShare": 41.91412879,
+      "reportedValidVoteShare": 41.91,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Jammu and Kashmir",
+      "kind": "union-territory",
+      "totalSeats": 5,
+      "seatsWon": 0,
+      "seatsContested": 2,
+      "congressVotes": 998793,
+      "validVotes": 5116405,
+      "validVoteShare": 19.52138269,
+      "reportedValidVoteShare": 19.52,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Jharkhand",
+      "kind": "state",
+      "totalSeats": 14,
+      "seatsWon": 2,
+      "seatsContested": 7,
+      "congressVotes": 3319345,
+      "validVotes": 17046517,
+      "validVoteShare": 19.47227695,
+      "reportedValidVoteShare": 19.47,
+      "strikeRate": 28.57142857,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Karnataka",
+      "kind": "state",
+      "totalSeats": 28,
+      "seatsWon": 9,
+      "seatsContested": 28,
+      "congressVotes": 17606669,
+      "validVotes": 38575274,
+      "validVoteShare": 45.64236925,
+      "reportedValidVoteShare": 45.64,
+      "strikeRate": 32.14285714,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Kerala",
+      "kind": "state",
+      "totalSeats": 20,
+      "seatsWon": 14,
+      "seatsContested": 16,
+      "congressVotes": 7003971,
+      "validVotes": 19821980,
+      "validVoteShare": 35.33436619,
+      "reportedValidVoteShare": 35.33,
+      "strikeRate": 87.5,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Ladakh",
+      "kind": "union-territory",
+      "totalSeats": 1,
+      "seatsWon": 0,
+      "seatsContested": 1,
+      "congressVotes": 37397,
+      "validVotes": 134612,
+      "validVoteShare": 27.78132707,
+      "reportedValidVoteShare": 27.78,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Lakshadweep",
+      "kind": "union-territory",
+      "totalSeats": 1,
+      "seatsWon": 1,
+      "seatsContested": 1,
+      "congressVotes": 25726,
+      "validVotes": 49067,
+      "validVoteShare": 52.43035034,
+      "reportedValidVoteShare": 52.43,
+      "strikeRate": 100.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Madhya Pradesh",
+      "kind": "state",
+      "totalSeats": 29,
+      "seatsWon": 0,
+      "seatsContested": 27,
+      "congressVotes": 12308049,
+      "validVotes": 37406546,
+      "validVoteShare": 32.90346294,
+      "reportedValidVoteShare": 32.9,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Maharashtra",
+      "kind": "state",
+      "totalSeats": 48,
+      "seatsWon": 13,
+      "seatsContested": 17,
+      "congressVotes": 9676935,
+      "validVotes": 56763551,
+      "validVoteShare": 17.0477971,
+      "reportedValidVoteShare": 17.05,
+      "strikeRate": 76.47058824,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Manipur",
+      "kind": "state",
+      "totalSeats": 2,
+      "seatsWon": 2,
+      "seatsContested": 2,
+      "congressVotes": 758971,
+      "validVotes": 1582610,
+      "validVoteShare": 47.95691927,
+      "reportedValidVoteShare": 47.96,
+      "strikeRate": 100.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Meghalaya",
+      "kind": "state",
+      "totalSeats": 2,
+      "seatsWon": 1,
+      "seatsContested": 2,
+      "congressVotes": 583087,
+      "validVotes": 1695119,
+      "validVoteShare": 34.39799802,
+      "reportedValidVoteShare": 34.4,
+      "strikeRate": 50.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Mizoram",
+      "kind": "state",
+      "totalSeats": 1,
+      "seatsWon": 0,
+      "seatsContested": 1,
+      "congressVotes": 98595,
+      "validVotes": 489443,
+      "validVoteShare": 20.14432733,
+      "reportedValidVoteShare": 20.14,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Nagaland",
+      "kind": "state",
+      "totalSeats": 1,
+      "seatsWon": 1,
+      "seatsContested": 1,
+      "congressVotes": 401951,
+      "validVotes": 759150,
+      "validVoteShare": 52.94750708,
+      "reportedValidVoteShare": 52.95,
+      "strikeRate": 100.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Odisha",
+      "kind": "state",
+      "totalSeats": 21,
+      "seatsWon": 1,
+      "seatsContested": 20,
+      "congressVotes": 3147281,
+      "validVotes": 24801399,
+      "validVoteShare": 12.68993334,
+      "reportedValidVoteShare": 12.69,
+      "strikeRate": 5.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Puducherry",
+      "kind": "union-territory",
+      "totalSeats": 1,
+      "seatsWon": 1,
+      "seatsContested": 1,
+      "congressVotes": 426005,
+      "validVotes": 798177,
+      "validVoteShare": 53.37224701,
+      "reportedValidVoteShare": 53.37,
+      "strikeRate": 100.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Punjab",
+      "kind": "state",
+      "totalSeats": 13,
+      "seatsWon": 7,
+      "seatsContested": 13,
+      "congressVotes": 3559656,
+      "validVotes": 13463765,
+      "validVoteShare": 26.43878588,
+      "reportedValidVoteShare": 26.44,
+      "strikeRate": 53.84615385,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Rajasthan",
+      "kind": "state",
+      "totalSeats": 25,
+      "seatsWon": 8,
+      "seatsContested": 23,
+      "congressVotes": 12578823,
+      "validVotes": 32885413,
+      "validVoteShare": 38.25046382,
+      "reportedValidVoteShare": 38.25,
+      "strikeRate": 34.7826087,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Sikkim",
+      "kind": "state",
+      "totalSeats": 1,
+      "seatsWon": 0,
+      "seatsContested": 1,
+      "congressVotes": 2241,
+      "validVotes": 382366,
+      "validVoteShare": 0.58608768,
+      "reportedValidVoteShare": 0.59,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Tamil Nadu",
+      "kind": "state",
+      "totalSeats": 39,
+      "seatsWon": 9,
+      "seatsContested": 9,
+      "congressVotes": 4659734,
+      "validVotes": 43206980,
+      "validVoteShare": 10.78467877,
+      "reportedValidVoteShare": 10.78,
+      "strikeRate": 100.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Telangana",
+      "kind": "state",
+      "totalSeats": 17,
+      "seatsWon": 8,
+      "seatsContested": 17,
+      "congressVotes": 8824961,
+      "validVotes": 21904129,
+      "validVoteShare": 40.28902952,
+      "reportedValidVoteShare": 40.29,
+      "strikeRate": 47.05882353,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Tripura",
+      "kind": "state",
+      "totalSeats": 2,
+      "seatsWon": 0,
+      "seatsContested": 1,
+      "congressVotes": 269763,
+      "validVotes": 2311239,
+      "validVoteShare": 11.67179162,
+      "reportedValidVoteShare": 11.67,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Uttar Pradesh",
+      "kind": "state",
+      "totalSeats": 80,
+      "seatsWon": 6,
+      "seatsContested": 17,
+      "congressVotes": 8315527,
+      "validVotes": 87274787,
+      "validVoteShare": 9.52798315,
+      "reportedValidVoteShare": 9.53,
+      "strikeRate": 35.29411765,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "Uttarakhand",
+      "kind": "state",
+      "totalSeats": 5,
+      "seatsWon": 0,
+      "seatsContested": 5,
+      "congressVotes": 1581711,
+      "validVotes": 4783497,
+      "validVoteShare": 33.06599753,
+      "reportedValidVoteShare": 33.07,
+      "strikeRate": 0.0,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    },
+    {
+      "year": 2024,
+      "unit": "West Bengal",
+      "kind": "state",
+      "totalSeats": 42,
+      "seatsWon": 1,
+      "seatsContested": 13,
+      "congressVotes": 2827055,
+      "validVotes": 59958733,
+      "validVoteShare": 4.71500123,
+      "reportedValidVoteShare": 4.72,
+      "strikeRate": 7.69230769,
+      "sources": [
+        "eci-2024-state",
+        "eci-2024-candidates"
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "andaman-and-nicobar-islands",
+      "name": "Andaman and Nicobar Islands",
+      "kind": "union-territory",
+      "units": {
+        "2019": [
+          "Andaman and Nicobar Islands"
+        ],
+        "2024": [
+          "Andaman and Nicobar Islands"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "andhra-pradesh",
+      "name": "Andhra Pradesh",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Andhra Pradesh"
+        ],
+        "2024": [
+          "Andhra Pradesh"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "arunachal-pradesh",
+      "name": "Arunachal Pradesh",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Arunachal Pradesh"
+        ],
+        "2024": [
+          "Arunachal Pradesh"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "assam",
+      "name": "Assam",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Assam"
+        ],
+        "2024": [
+          "Assam"
+        ]
+      },
+      "note": "Assam underwent constituency delimitation in 2023. These are state totals, not matched constituency comparisons."
+    },
+    {
+      "id": "bihar",
+      "name": "Bihar",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Bihar"
+        ],
+        "2024": [
+          "Bihar"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "chandigarh",
+      "name": "Chandigarh",
+      "kind": "union-territory",
+      "units": {
+        "2019": [
+          "Chandigarh"
+        ],
+        "2024": [
+          "Chandigarh"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "chhattisgarh",
+      "name": "Chhattisgarh",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Chhattisgarh"
+        ],
+        "2024": [
+          "Chhattisgarh"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "dadra-nagar-haveli-daman-diu",
+      "name": "Dadra and Nagar Haveli and Daman and Diu",
+      "kind": "union-territory",
+      "units": {
+        "2019": [
+          "Dadra and Nagar Haveli",
+          "Daman and Diu"
+        ],
+        "2024": [
+          "Dadra and Nagar Haveli and Daman and Diu"
+        ]
+      },
+      "note": "The 2019 figures combine the two former one-seat Union Territories. The 2024 figures use the merged two-seat Union Territory. Votes and denominators are added before division; percentages are never added or averaged."
+    },
+    {
+      "id": "delhi",
+      "name": "Delhi",
+      "kind": "union-territory",
+      "units": {
+        "2019": [
+          "Delhi"
+        ],
+        "2024": [
+          "Delhi"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "goa",
+      "name": "Goa",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Goa"
+        ],
+        "2024": [
+          "Goa"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "gujarat",
+      "name": "Gujarat",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Gujarat"
+        ],
+        "2024": [
+          "Gujarat"
+        ]
+      },
+      "note": "The 2024 vote denominator covers 25 polled constituencies. Surat was won unopposed by BJP. Total elected seats remain 26; no votes are imputed for Surat."
+    },
+    {
+      "id": "haryana",
+      "name": "Haryana",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Haryana"
+        ],
+        "2024": [
+          "Haryana"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "himachal-pradesh",
+      "name": "Himachal Pradesh",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Himachal Pradesh"
+        ],
+        "2024": [
+          "Himachal Pradesh"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "jammu-kashmir-ladakh",
+      "name": "Jammu and Kashmir + Ladakh",
+      "kind": "combined-area",
+      "units": {
+        "2019": [
+          "Jammu and Kashmir"
+        ],
+        "2024": [
+          "Jammu and Kashmir",
+          "Ladakh"
+        ]
+      },
+      "note": "2019 is the former six-seat state of Jammu and Kashmir. For the same broad area, 2024 combines the five-seat Union Territory of Jammu and Kashmir and one-seat Ladakh. Congress votes and valid-vote denominators are added before division. The 2022 delimitation changed constituency boundaries; this is not a seat-by-seat match."
+    },
+    {
+      "id": "jharkhand",
+      "name": "Jharkhand",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Jharkhand"
+        ],
+        "2024": [
+          "Jharkhand"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "karnataka",
+      "name": "Karnataka",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Karnataka"
+        ],
+        "2024": [
+          "Karnataka"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "kerala",
+      "name": "Kerala",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Kerala"
+        ],
+        "2024": [
+          "Kerala"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "lakshadweep",
+      "name": "Lakshadweep",
+      "kind": "union-territory",
+      "units": {
+        "2019": [
+          "Lakshadweep"
+        ],
+        "2024": [
+          "Lakshadweep"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "madhya-pradesh",
+      "name": "Madhya Pradesh",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Madhya Pradesh"
+        ],
+        "2024": [
+          "Madhya Pradesh"
+        ]
+      },
+      "note": "Contested seats count candidates who remained on the final ballot. A withdrawn nomination is excluded."
+    },
+    {
+      "id": "maharashtra",
+      "name": "Maharashtra",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Maharashtra"
+        ],
+        "2024": [
+          "Maharashtra"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "manipur",
+      "name": "Manipur",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Manipur"
+        ],
+        "2024": [
+          "Manipur"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "meghalaya",
+      "name": "Meghalaya",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Meghalaya"
+        ],
+        "2024": [
+          "Meghalaya"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "mizoram",
+      "name": "Mizoram",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Mizoram"
+        ],
+        "2024": [
+          "Mizoram"
+        ]
+      },
+      "note": "Congress did not field a candidate in 2019. The independent candidate’s votes are excluded; strike rate is undefined."
+    },
+    {
+      "id": "nagaland",
+      "name": "Nagaland",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Nagaland"
+        ],
+        "2024": [
+          "Nagaland"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "odisha",
+      "name": "Odisha",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Odisha"
+        ],
+        "2024": [
+          "Odisha"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "puducherry",
+      "name": "Puducherry",
+      "kind": "union-territory",
+      "units": {
+        "2019": [
+          "Puducherry"
+        ],
+        "2024": [
+          "Puducherry"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "punjab",
+      "name": "Punjab",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Punjab"
+        ],
+        "2024": [
+          "Punjab"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "rajasthan",
+      "name": "Rajasthan",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Rajasthan"
+        ],
+        "2024": [
+          "Rajasthan"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "sikkim",
+      "name": "Sikkim",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Sikkim"
+        ],
+        "2024": [
+          "Sikkim"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "tamil-nadu",
+      "name": "Tamil Nadu",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Tamil Nadu"
+        ],
+        "2024": [
+          "Tamil Nadu"
+        ]
+      },
+      "note": "The 2019 denominator includes Vellore’s deferred August poll. Congress did not contest Vellore."
+    },
+    {
+      "id": "telangana",
+      "name": "Telangana",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Telangana"
+        ],
+        "2024": [
+          "Telangana"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "tripura",
+      "name": "Tripura",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Tripura"
+        ],
+        "2024": [
+          "Tripura"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "uttar-pradesh",
+      "name": "Uttar Pradesh",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Uttar Pradesh"
+        ],
+        "2024": [
+          "Uttar Pradesh"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "uttarakhand",
+      "name": "Uttarakhand",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "Uttarakhand"
+        ],
+        "2024": [
+          "Uttarakhand"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "west-bengal",
+      "name": "West Bengal",
+      "kind": "state",
+      "units": {
+        "2019": [
+          "West Bengal"
+        ],
+        "2024": [
+          "West Bengal"
+        ]
+      },
+      "note": ""
+    }
+  ]
+}
